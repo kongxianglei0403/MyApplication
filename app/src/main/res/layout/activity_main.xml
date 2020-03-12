@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描设备" />
+    <Button
+        android:id="@+id/button_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pdf" />
+    <Button
+        android:id="@+id/button_stick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stick" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/paired_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ListView
+                android:id="@+id/new_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
